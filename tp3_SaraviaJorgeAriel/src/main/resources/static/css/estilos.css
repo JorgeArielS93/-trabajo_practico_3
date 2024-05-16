@@ -1,0 +1,107 @@
+/* Encabezado */
+#header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Menú de navegación */
+.nav-menu {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    float: left;
+}
+
+.nav-menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-menu li a:hover {
+    background-color: #111;
+}
+
+/* Contenido principal */
+.main-content {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.section-content {
+    margin-bottom: 20px;
+}
+
+.section-title {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.section-paragraph,
+.section-list,
+.section-table {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/** Contenido adicional */
+.additional-content {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.additional-content a,
+.additional-content img {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.additional-content a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.additional-content a:hover {
+    text-decoration: underline;
+}
+
+/* Pie de página */
+#footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-link {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}

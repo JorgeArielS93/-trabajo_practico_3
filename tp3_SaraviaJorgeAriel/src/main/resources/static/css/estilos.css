@@ -1,3 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+html{
+  height: 100%;
+}
+body{
+  min-height: 100%;
+}
+
+
 /* Encabezado */
 #header {
     background-color: #4CAF50;

@@ -1,16 +1,17 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
-html{
-  height: 100%;
+html, body {
+    height: 100%;
 }
-body{
-  min-height: 100%;
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
-
 
 /* Encabezado */
 #header {
@@ -18,25 +19,21 @@ body{
     color: white;
     padding: 20px;
     text-align: center;
-    font-family: Arial, sans-serif;
 }
 
 /* Menú de navegación */
 .nav-menu {
     background-color: #333;
-    overflow: hidden;
+    
 }
-
 .nav-menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-
 .nav-menu li {
     float: left;
 }
-
 .nav-menu li a {
     display: block;
     color: white;
@@ -44,21 +41,40 @@ body{
     padding: 14px 16px;
     text-decoration: none;
 }
-
 .nav-menu li a:hover {
     background-color: #111;
 }
 
 /* Contenido principal */
 .main-content {
+    display: flex;
+    flex: 1;
     padding: 20px;
-    font-family: Arial, sans-serif;
 }
 
 .section-content {
-    margin-bottom: 20px;
+    flex: 7;
+    margin-right: 20px;
 }
 
+.additional-content {
+    flex: 3;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+/* Formulario específico */
+.form-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container {
+    width: 70%;
+}
+
+/* Estilos adicionales */
 .section-title {
     color: #333;
     font-size: 1.5em;
@@ -79,14 +95,7 @@ body{
     margin-bottom: 10px;
 }
 
-/** Contenido adicional */
-.additional-content {
-    background-color: #f4f4f4;
-    padding: 10px;
-    margin: 20px 0;
-    font-family: Arial, sans-serif;
-}
-
+/* Contenido adicional */
 .additional-content a,
 .additional-content img {
     display: block;
@@ -108,7 +117,6 @@ body{
     color: white;
     padding: 20px;
     text-align: center;
-    font-family: Arial, sans-serif;
 }
 
 .footer-link {
@@ -119,3 +127,79 @@ body{
 .footer-link:hover {
     text-decoration: underline;
 }
+
+/* mquetacion formulario*/
+.row{
+	display: flex;
+	flex-wrap: wrap;	
+}
+
+.form{
+	flex: 7;
+	padding: 20px;
+	
+}
+.aside-form{
+	flex: 3;
+	padding: 20px;
+}
+
+
+/* estilos formulario*/
+
+input {
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   padding: 10px;
+   width: 100%;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+form{max-width: 500px; margin: 0 auto;}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    margin-right: 20px;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    margin-right: 20px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50; /* Fondo verde */
+    color: white; /* Texto blanco */
+    padding: 15px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+    font-size: 1em; /* Tamaño de fuente */
+    transition: background-color 0.3s ease; /* Transición suave */
+    width: 100%; /* Ancho completo */
+    text-align: center; /* Centrado de texto */
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* Fondo verde más oscuro al pasar el ratón */
+}
+
+button[type="submit"]:active {
+    background-color: #3e8e41; /* Fondo aún más oscuro al hacer clic */
+}
+
